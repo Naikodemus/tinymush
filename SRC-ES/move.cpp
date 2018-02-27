@@ -185,7 +185,7 @@ static void process_enter_loc(dbref thing, dbref src, dbref cause, bool canhear,
 #else
         notify_except2(loc, thing, thing, cause,
 #endif // REALITY_LVLS
-                   tprintf(T("%s has arrived."), Moniker(thing)));
+                   tprintf(T("%s ha llegado."), Moniker(thing)));
     }
 }
 
