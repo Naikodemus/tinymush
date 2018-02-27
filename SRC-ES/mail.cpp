@@ -1219,7 +1219,7 @@ static void do_mail_file(dbref player, UTF8 *msglist, UTF8 *folder)
     int foldernum;
     if ((foldernum = parse_folder(player, folder)) == -1)
     {
-        raw_notify(player, T("MAIL: Invalid folder specification"));
+        raw_notify(player, T("CORREO: Especificación inválida de carpeta"));
         return;
     }
     int i = 0, j = 0;
