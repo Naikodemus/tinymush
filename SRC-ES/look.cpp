@@ -1363,13 +1363,13 @@ void look_in(dbref player, dbref loc, int key)
     if (  !is_terse
        || mudconf.terse_contents)
     {
-        look_contents(player, loc, T("Aquí hay..."), CONTENTS_LOCAL);
+        look_contents(player, loc, T("%rAhora ves..."), CONTENTS_LOCAL);
     }
     if (  (key & LK_SHOWEXIT)
        && (  !is_terse
           || mudconf.terse_exits))
     {
-        look_exits(player, loc, T("Salidas visibles:"));
+        look_exits(player, loc, T("%rAsimismo..."));
     }
 }
 
